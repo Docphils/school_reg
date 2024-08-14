@@ -16,7 +16,10 @@
                     <span class="w-full">{{ strtoupper($registration->learner_surname) }}, {{ $registration->learner_names }}</span>
                     <span class="w-full">{{ strtoupper($registration->surname) }}, {{ $registration->othernames}}</span>
                     <span class="w-full">{{ $registration->email }}</span>
-                    <a class="w-full text-cyan-200 hover:text-cyan-50 hover:underline" href="#" wire:click="show({{ $registration->id }})"> View</a>                
+                    <p class="flex w-full gap-2">
+                        <a class=" text-cyan-200 hover:text-cyan-50 hover:underline" href="#" wire:click="show({{ $registration->id }})"> View</a> 
+                        <a href="#" wire:click.prevent="edit({{ $registration->id }})" class="text-yellow-400 hover:text-white hover:underline">Edit</a>
+                    </p>               
                 </div> 
             </div>
             @endforeach
@@ -68,14 +71,17 @@
     
                 <!-- Modal Footer -->
                 <div class="flex justify-end mt-4">
-                    <button @click="showModal = false" wire:click="edit({{ $registration->id }})" class="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400">
-                        Edit
-                    </button>
+                   
                 </div>
             </div>
         </div>
     </div>
     
-    
+    @endif
+    @if ($editId)
+         @include('livewire.registrations.edit-form')
+    @endif
+    @if (session('success'))
+        <div class="bg-green-100 px-2 rounded-md text-center my-2 mx-auto text-green-600">{{session('success')}}</div>
     @endif
 </div>

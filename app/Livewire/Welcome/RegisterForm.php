@@ -29,7 +29,7 @@ class RegisterForm extends Component
             'learner_surname' => 'required|string',
             'learner_names' => 'required|string',
             'dob' => 'required|date',
-            'previous_class' => 'required|in:pre_nursery,play_group,nursery,reception,grade_1,grade_2,grade_3,grade_4,grade_5,grade_6',
+            'previous_class' => 'required|in:Pre Nursery,Play Group,Nursery,Reception,Grade 1,Grade 2,Grade 3,Grade 4,Grade 5,Grade 6',
             'remarks' => 'nullable|string',
         ]);
         Registration::create($validatedData);

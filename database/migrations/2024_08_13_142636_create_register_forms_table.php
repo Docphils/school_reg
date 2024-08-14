@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('learner_surname');
             $table->string('learner_names');
             $table->date('dob');
-            $table->enum('previous_class', ['pre_nursery','play_group','nursery','reception','grade_1','grade_2','grade_3','grade_4','grade_5','grade_6']);
+            $table->enum('previous_class', ['Pre Nursery','Play Group','Nursery','Reception','Grade 1','Grade 2','Grade 3','Grade 4','Grade 5','Grade 6']);
             $table->string('remarks')->nullable();
 
             $table->timestamps();

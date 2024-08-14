@@ -72,16 +72,17 @@
                     <div class="grid w-full ">
                         <label for="previous_class">Previous Class:</label>
                         <select wire:model="previous_class" class=" rounded-md" id="previous_class" name="previous_class" required>
-                            <option value="play_group">Play Group</option>
-                            <option value="pre_nursery">Pre-Nursery</option>
-                            <option value="nursery">Nursery</option>
-                            <option value="reception">Reception</option>
-                            <option value="grade_1">Grade 1</option>
-                            <option value="grade_2">Grade 2</option>
-                            <option value="grade_3">Grade 3</option>
-                            <option value="grade_4">Grade 4</option>
-                            <option value="grade_5">Grade 5</option>
-                            <option value="grade_6">Grade 6</option>
+                            <option value="">Select Class</option>
+                            <option value="Play Group">Play Group</option>
+                            <option value="Pre Nursery">Pre Nursery</option>
+                            <option value="Nursery">Nursery</option>
+                            <option value="Reception">Reception</option>
+                            <option value="Grade 1">Grade 1</option>
+                            <option value="Grade 2">Grade 2</option>
+                            <option value="Grade 3">Grade 3</option>
+                            <option value="Grade 4">Grade 4</option>
+                            <option value="Grade 5">Grade 5</option>
+                            <option value="Grade 6">Grade 6</option>
                         </select>
                         @error('previous_class')
                             <span class="text-red-500">{{$message}}</span>

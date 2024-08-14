@@ -34,7 +34,7 @@
                                 <div class="text-center text-white p-8 rounded-lg">
                                     <h1 class="text-5xl font-bold hover:animate-bounce">Welcome to Meph Academy</h1>
                                     <p class="mt-4 text-xl px-10">Trust us with the allround growth and development of you child. We groom and nurture world champions in the most conducive learning atmosphere</p>
-                                    <a href="#contact" class="mt-8 inline-block bg-cyan-900 hover:underline text-lg text-white py-3 px-6 font-bold rounded-lg hover:bg-cyan-600 transition duration-300">Register Now</a>
+                                    <a href="#form" class="mt-8 inline-block bg-cyan-900 hover:underline text-lg text-white py-3 px-6 font-bold rounded-lg hover:bg-cyan-600 transition duration-300">Register Now</a>
                                 </div>
                             </div>
                         </div>
@@ -48,7 +48,7 @@
                                 </div>
                                 <div class="text-center">Get your child enrolled with us today for unforgettable experiences.</div>
                             </div>
-                            <div class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800">
+                            <div id="form"  class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800">
                                 @livewire('welcome.register-form')
                             </div>
                         </div>

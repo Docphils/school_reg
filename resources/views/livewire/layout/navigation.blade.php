@@ -27,6 +27,9 @@ $logout = function (Logout $logout) {
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <a href="{{url('/')}}" :active="url()->is('/')" class="inline-flex items-center px-1 pt-1 border-b-2 border-indigo-400 text-sm font-medium leading-5 text-cyan-50 focus:outline-none focus:border-indigo-700 transition duration-150 ease-in-out" wire:navigate>
+                        {{ __('Home') }}
+                    </a>
                 </div>
             </div>
 
